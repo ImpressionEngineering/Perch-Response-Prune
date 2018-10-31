@@ -28,7 +28,6 @@ Response Prune requires the following:
 2. Include the addon in the Perch apps config file `perch/config/apps.php` Include `impeng_resposeprune` after `perch_forms`.
 
 ```php
-<?php
 	$apps_list = [ 
 		'perch_forms',
 		'impeng_responseprune',
@@ -74,4 +73,5 @@ You may find it helpful to trigger scheduled tasks from a browser rather than a 
 3. Add a "trial mode".
 4. Add ability to control how often Response Prune runs.
 5. Add separate configuration for spam listed responses.
+6. Add some "are you sure" steps.
 
