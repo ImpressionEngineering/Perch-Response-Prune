@@ -11,7 +11,7 @@ Code reviews, feature requests and all comments welcome. Just create an [issue](
 
 ## Prerequisites
 
-Respose Prune requires the following:
+Response Prune requires the following:
 
 1. The Perch Forms addon must be installed.
 2. At least one form needs to be configured.
@@ -34,7 +34,7 @@ Respose Prune requires the following:
 
 ## Configuration
 
-Once installed there will be a new section within the Perch settings for Respose Prune (Perch Admin >> Settings >> General)
+Once installed there will be a new section within the Perch settings for Response Prune (Perch Admin >> Settings >> General)
 
 ![Screenshot](images/impeng_responseprune-screenshot1.png)
 
@@ -51,7 +51,7 @@ Results for each run can be viewed on the Scheduled Task settings page (Perch Ad
 
 ![Screenshot](images/impeng_responseprune-screenshot2.png)
 
-If there are no form responces to be deleted the scheduled task message will look like this:
+If there are no form responses to be deleted the scheduled task message will look like this:
 
 ![Screenshot](images/impeng_responseprune-screenshot3.png)
 
@@ -62,13 +62,13 @@ The Scheduled Task message is restricted to 256 characters. If a large number of
 
 
 ## Troubleshooting
-You may find it helpfull to trigger scheduled tasks from a browser rather than a scheduled `cron` task. Details available at [https://docs.grabaperch.com/perch/getting-started/installing/scheduled-tasks/](https://docs.grabaperch.com/perch/getting-started/installing/scheduled-tasks/)
+You may find it helpful to trigger scheduled tasks from a browser rather than a scheduled `cron` task. Details available at [https://docs.grabaperch.com/perch/getting-started/installing/scheduled-tasks/](https://docs.grabaperch.com/perch/getting-started/installing/scheduled-tasks/)
 
 ## Roadmap
 
-1. Record all responce IDs deleted in a table.
+1. Record all response IDs deleted in a table.
 2. Implement a full admin app with it's own pages for settings and results.
 3. Add a "trial mode".
-4. Add ability to contol how often Respose Prune runs.
+4. Add ability to control how often Response Prune runs.
 5. Add separate configuration for spam listed responses.
 

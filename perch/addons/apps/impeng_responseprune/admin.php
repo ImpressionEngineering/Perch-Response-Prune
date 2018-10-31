@@ -1,6 +1,6 @@
 <?php
 
-   	$this->register_app('impeng_responseprune', 'Form Response Pruning ( WARNING: This will permanently DELETE your form responses )', 9, 'Perch addon to prune form responses from the database', '0.1', true);
+   	$this->register_app('impeng_responseprune', 'Form Response Pruning ( WARNING: This will permanently DELETE your form responses )', 9, 'Perch addon to prune form responses from the database', '0.2', true);
     $this->require_version('impeng_responseprune', '3.0');
 	
 	$API  = new PerchAPI(1.0, 'impeng_responseprune');
