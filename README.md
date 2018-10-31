@@ -8,11 +8,13 @@ An addon for Perch CMS that deletes form responses older than a set age.
 
 Code reviews, feature requests and all comments welcome. Just create an [issue](https://github.com/ImpressionEngineering/Perch-Response-Prune/issues/new).
 
+![WARNING](images/Warning-large.png)
 
 ## Prerequisites
 
 Response Prune requires the following:
 
+1. You take regular database backups.
 1. The Perch Forms addon must be installed.
 2. At least one form needs to be configured.
 3. Scheduled tasks must be configured for your Perch installation. See [https://docs.grabaperch.com/perch/getting-started/installing/scheduled-tasks/](https://docs.grabaperch.com/perch/getting-started/installing/scheduled-tasks/)
@@ -20,7 +22,8 @@ Response Prune requires the following:
 
 ## Installation
 
-1. copy the `impeng_responseprune` folder from inside the download into the folder `perch/addons/apps/`.
+1. Ensure you have a good database backup.
+2. copy the `impeng_responseprune` folder from inside the download into the folder `perch/addons/apps/`.
 
 2. Include the addon in the Perch apps config file `perch/config/apps.php` Include `impeng_resposeprune` after `perch_forms`.
 
