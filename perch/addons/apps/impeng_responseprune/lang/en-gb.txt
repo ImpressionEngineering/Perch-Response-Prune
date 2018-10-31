@@ -1,0 +1,19 @@
+{
+    "lang": "en-gb",
+    "Form Response Pruning ( WARNING: This will permanently DELETE your form responses )": "Form Response Pruning ( WARNING: This will permanently DELETE your form responses )",
+    "Never": "Never",
+    "One Day": "One Day",
+    "One Week": "One Week",
+    "Two Weeks": "Two Weeks",
+    "One Month": "One Month",
+    "Two Months": "Two Months",
+    "Three Months": "Three Months",
+    "Six Months": "Six Months",
+    "One Year": "One Year",
+    "Two Years": "Two Years",
+    " - delete form responses older than:": " - delete form responses older than:",
+    "Form contact - delete form responses older than:": "Form contact - delete form responses older than:",
+    "Form2 - delete form responses older than:": "Form2 - delete form responses older than:",
+    "Deleted %s responses with IDs: ": "Deleted %s responses with IDs: ",
+    "Nothing deleted.": "Nothing deleted."
+}
