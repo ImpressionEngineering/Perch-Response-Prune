@@ -15,5 +15,15 @@
     "Form contact - delete form responses older than:": "Form contact - delete form responses older than:",
     "Form2 - delete form responses older than:": "Form2 - delete form responses older than:",
     "Deleted %s responses with IDs: ": "Deleted %s responses with IDs: ",
-    "Nothing deleted.": "Nothing deleted."
+    "Nothing deleted.": "Nothing deleted.",
+    " - delete Spam form responses older than:": " - delete Spam form responses older than:",
+    " - delete Not Spam form responses older than:": " - delete Not Spam form responses older than:",
+    "Form contact - delete Spam form responses older than:": "Form contact - delete Spam form responses older than:",
+    "Form contact - delete Not Spam form responses older than:": "Form contact - delete Not Spam form responses older than:",
+    "Form interest - delete Spam form responses older than:": "Form interest - delete Spam form responses older than:",
+    "Form interest - delete Not Spam form responses older than:": "Form interest - delete Not Spam form responses older than:",
+    "Three Days": "Three Days",
+    " Run the prune every: ": " Run the prune every: ",
+    "send notification via email?": "send notification via email?",
+    "Email address for notifications": "Email address for notifications"
 }
