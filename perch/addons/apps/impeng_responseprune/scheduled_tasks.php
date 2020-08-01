@@ -70,13 +70,13 @@ if ($runMinutes != "") {
             if ($notify != "" && $notifyEmail != "") {
                 $email = New PerchAPI_Email(1.0, 'impeng_responseprune', $Lang); 
                 $email->set_template("report.html", "email");
-                $email->set("domain", htmlspecialchars(@$_SERVER['SERVER_NAME']) );
+                $email->set("domain", htmlspecialchars($_SERVER['SERVER_NAME']) );
                 $email->set("today", date('l jS \of F Y'));
                 $email->set("deletedCount", $purgeList->getDeletedCount());
                 $email->set("firstDate", $purgeList->getFistDate());
                 $email->set("lastDate", $purgeList->getLastDate());
                 $email->set("fullList", $purgeList->getFullList());
-                $email->subject("Form Responses Prune Results for" . htmlspecialchars(@$_SERVER['SERVER_NAME']) );
+                $email->subject("Form Responses Prune Results for" . htmlspecialchars($_SERVER['SERVER_NAME']) );
                 $email->recipientEmail($notifyEmail);
                 $email->senderName(PERCH_EMAIL_FROM_NAME);
                 $email->senderEmail(PERCH_EMAIL_FROM);
