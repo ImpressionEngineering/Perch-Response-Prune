@@ -65,18 +65,27 @@ if ($runMinutes != "") {
             // Get notification settings
             $notify = $Settings->get('impeng_responseprune_notify')->val();
             $notifyEmail = $Settings->get('impeng_responseprune_notify_email')->val();
+            
+            // Obtain the domain name but $_SERVER not populated from cli (eg cron) so use siteURL setting or email domain
+            if ( $Settings->get('siteURL')->val() != "" && $Settings->get('siteURL')->val() != "/") {
+                $domain = ltrim($Settings->get('siteURL')->val() , "/" );
+                $domain = str_replace(array('http://','https://'), '', $domain);
+            } else {             
+                $parts = explode("@",PERCH_EMAIL_FROM); 
+                $domain = $parts[1]; 
+            }
 
             // Send Email
             if ($notify != "" && $notifyEmail != "") {
                 $email = New PerchAPI_Email(1.0, 'impeng_responseprune', $Lang); 
                 $email->set_template("report.html", "email");
-                $email->set("domain", htmlspecialchars($_SERVER['SERVER_NAME']) );
+                $email->set("domain", $domain );
                 $email->set("today", date('l jS \of F Y'));
                 $email->set("deletedCount", $purgeList->getDeletedCount());
                 $email->set("firstDate", $purgeList->getFistDate());
                 $email->set("lastDate", $purgeList->getLastDate());
                 $email->set("fullList", $purgeList->getFullList());
-                $email->subject("Form Responses Prune Results for" . htmlspecialchars($_SERVER['SERVER_NAME']) );
+                $email->subject("Form Responses Prune Results for " . $domain );
                 $email->recipientEmail($notifyEmail);
                 $email->senderName(PERCH_EMAIL_FROM_NAME);
                 $email->senderEmail(PERCH_EMAIL_FROM);
